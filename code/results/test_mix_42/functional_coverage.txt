@@ -1,0 +1,151 @@
+QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+Start time: 15:06:57 on Oct 12,2026
+vcover report -details -cvg D:\Apply Process\Resume\Projects - Copy\Additional_English_Projects\02_Coverage_Driven_Multi_Cycle_ALU_Verification\code\results\test_mix_42\test_mix_42.ucdb 
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /class_pkg
+=== Design Unit: work.class_pkg
+=================================================================================
+
+Covergroup Coverage:
+    Covergroups                      2        na        na    87.50%
+        Coverpoints/Crosses          7        na        na        na
+            Covergroup Bins         21        18         3    85.71%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /class_pkg/ALU_in_coverage/ALU_in_transaction_cg 
+                                                       75.00%        100          -    Uncovered            
+    covered/total bins:                                    12         15          -                      
+    missing/total bins:                                     3         15          -                      
+    % Hit:                                             80.00%        100          -                      
+    Coverpoint op                                     100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin noop                                           59         10          -    Covered              
+        bin addop                                          52         10          -    Covered              
+        bin andop                                          51         10          -    Covered              
+        bin xorop                                          54         10          -    Covered              
+        bin mulop                                          55         10          -    Covered              
+        bin rstop                                          62         10          -    Covered              
+        illegal_bin invalid_op                              0                     -    ZERO                 
+    Coverpoint a                                       66.66%        100          -    Uncovered            
+        covered/total bins:                                 2          3          -                      
+        missing/total bins:                                 1          3          -                      
+        % Hit:                                         66.66%        100          -                      
+        bin low                                           102         10          -    Covered              
+        bin mid                                           105         10          -    Covered              
+        bin high                                            5         10          -    Uncovered            
+    Coverpoint b                                       66.66%        100          -    Uncovered            
+        covered/total bins:                                 2          3          -                      
+        missing/total bins:                                 1          3          -                      
+        % Hit:                                         66.66%        100          -                      
+        bin low                                           102         10          -    Covered              
+        bin mid                                           105         10          -    Covered              
+        bin high                                            5         10          -    Uncovered            
+    Coverpoint clk_gap                                 66.66%        100          -    Uncovered            
+        covered/total bins:                                 2          3          -                      
+        missing/total bins:                                 1          3          -                      
+        % Hit:                                         66.66%        100          -                      
+        bin zero                                            9         10          -    Uncovered            
+        bin Low                                           163         10          -    Covered              
+        bin high                                           99         10          -    Covered              
+ TYPE /class_pkg/ALU_out_coverage/ALU_out_transaction_cg 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     6          6          -                      
+    missing/total bins:                                     0          6          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint result                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                           153         10          -    Covered              
+        bin high                                           20         10          -    Covered              
+    Coverpoint result_rst                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                           173         10          -    Covered              
+        bin high                                          101         10          -    Covered              
+    Coverpoint reset_during_calculation               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin NO_mid_cal_reset                              235         10          -    Covered              
+        bin mid_cal_reset                                  39         10          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /class_pkg/ALU_in_coverage/ALU_in_transaction_cg 
+                                                       75.00%        100          -    Uncovered            
+    covered/total bins:                                    12         15          -                      
+    missing/total bins:                                     3         15          -                      
+    % Hit:                                             80.00%        100          -                      
+    Coverpoint op                                     100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin noop                                           59         10          -    Covered              
+        bin addop                                          52         10          -    Covered              
+        bin andop                                          51         10          -    Covered              
+        bin xorop                                          54         10          -    Covered              
+        bin mulop                                          55         10          -    Covered              
+        bin rstop                                          62         10          -    Covered              
+        illegal_bin invalid_op                              0                     -    ZERO                 
+    Coverpoint a                                       66.66%        100          -    Uncovered            
+        covered/total bins:                                 2          3          -                      
+        missing/total bins:                                 1          3          -                      
+        % Hit:                                         66.66%        100          -                      
+        bin low                                           102         10          -    Covered              
+        bin mid                                           105         10          -    Covered              
+        bin high                                            5         10          -    Uncovered            
+    Coverpoint b                                       66.66%        100          -    Uncovered            
+        covered/total bins:                                 2          3          -                      
+        missing/total bins:                                 1          3          -                      
+        % Hit:                                         66.66%        100          -                      
+        bin low                                           102         10          -    Covered              
+        bin mid                                           105         10          -    Covered              
+        bin high                                            5         10          -    Uncovered            
+    Coverpoint clk_gap                                 66.66%        100          -    Uncovered            
+        covered/total bins:                                 2          3          -                      
+        missing/total bins:                                 1          3          -                      
+        % Hit:                                         66.66%        100          -                      
+        bin zero                                            9         10          -    Uncovered            
+        bin Low                                           163         10          -    Covered              
+        bin high                                           99         10          -    Covered              
+ TYPE /class_pkg/ALU_out_coverage/ALU_out_transaction_cg 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     6          6          -                      
+    missing/total bins:                                     0          6          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint result                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                           153         10          -    Covered              
+        bin high                                           20         10          -    Covered              
+    Coverpoint result_rst                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                           173         10          -    Covered              
+        bin high                                          101         10          -    Covered              
+    Coverpoint reset_during_calculation               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin NO_mid_cal_reset                              235         10          -    Covered              
+        bin mid_cal_reset                                  39         10          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 87.50%  COVERGROUP TYPES: 2
+
+Total Coverage By Instance (filtered view): 87.50%
+
+End time: 15:06:57 on Oct 12,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

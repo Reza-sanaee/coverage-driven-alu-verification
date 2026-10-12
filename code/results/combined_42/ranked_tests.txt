@@ -1,0 +1,17 @@
+
+Ranking based on minimum number of tests.
+Ranking design tree path: "/*".
+Ranking 4 test(s).
+
+Rank   TotalCov  Testname            
+-----  --------  --------------------
+    1     91.66  random_test42       
+    2    100.00  test_high42         
+No further improvement to coverage.
+
+Ranking summary:
+	Total Contributing Tests      = 2
+	Total Non-Contributing Tests  = 2
+	Total Coverage                = 100.00%
+	Total CPU Time                = 0.02 s
+	Total SIM Time                = 120050000.00 ps

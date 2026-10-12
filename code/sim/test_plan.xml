@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Workbook>
+  <Worksheet>
+    <Table>
+      <Row>
+        <Cell>1</Cell>
+        <Cell>alu_in</Cell>
+        <Cell>alu in transaction coverage</Cell>
+        <Cell />
+        <Cell />
+        <Cell>3</Cell>
+        <Cell>100</Cell>
+      </Row>
+      <Row>
+        <Cell>1.1</Cell>
+        <Cell>operations</Cell>
+        <Cell>this cover point tracks the available ALU operations</Cell>
+        <Cell>ALU_in_transaction_cg:op</Cell>
+        <Cell>CoverPoint</Cell>
+        <Cell>5</Cell>
+        <Cell>100</Cell>
+      </Row>
+      <Row>
+        <Cell>1.2</Cell>
+        <Cell>Operand A</Cell>
+        <Cell>this cover point tracks the Operand A</Cell>
+        <Cell>ALU_in_transaction_cg:a</Cell>
+        <Cell>CoverPoint</Cell>
+        <Cell>1</Cell>
+        <Cell>100</Cell>
+      </Row>
+      <Row>
+        <Cell>1.3</Cell>
+        <Cell>Operand B</Cell>
+        <Cell>this cover point tracks the Operand B</Cell>
+        <Cell>ALU_in_transaction_cg:b</Cell>
+        <Cell>CoverPoint</Cell>
+        <Cell>1</Cell>
+        <Cell>100</Cell>
+      </Row>
+      <Row>
+        <Cell>1.4</Cell>
+        <Cell>clock gap</Cell>
+        <Cell>this cover point tracks the gap between operations</Cell>
+        <Cell>ALU_in_transaction_cg:clk_gap</Cell>
+        <Cell>CoverPoint</Cell>
+        <Cell>1</Cell>
+        <Cell>100</Cell>
+      </Row>
+      <Row>
+        <Cell>2</Cell>
+        <Cell>alu out</Cell>
+        <Cell>alu out transaction coverage</Cell>
+        <Cell />
+        <Cell />
+        <Cell>1</Cell>
+        <Cell>100</Cell>
+      </Row>
+      <Row>
+        <Cell>2.1</Cell>
+        <Cell>Result value</Cell>
+        <Cell>this cover point tracks the Result</Cell>
+        <Cell>ALU_out_transaction_cg:result</Cell>
+        <Cell>coverpoint</Cell>
+        <Cell>1</Cell>
+        <Cell>100</Cell>
+      </Row>
+      <Row>
+        <Cell>2.2</Cell>
+        <Cell>Reset observed</Cell>
+        <Cell>this cover point tracks the result_rst</Cell>
+        <Cell>ALU_out_transaction_cg:result_rst</Cell>
+        <Cell>coverpoint</Cell>
+        <Cell>1</Cell>
+        <Cell>100</Cell>
+      </Row>
+      <Row>
+        <Cell>2.3</Cell>
+        <Cell>Reset during result collection</Cell>
+        <Cell>this cover point tracks the operation rst of the ALU during data gathering</Cell>
+        <Cell>ALU_out_transaction_cg:reset_during_calculation</Cell>
+        <Cell>coverpoint</Cell>
+        <Cell>1</Cell>
+        <Cell>100</Cell>
+      </Row>
+    </Table>
+  </Worksheet>
+</Workbook>

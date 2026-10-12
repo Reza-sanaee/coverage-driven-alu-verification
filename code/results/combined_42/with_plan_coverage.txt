@@ -1,0 +1,367 @@
+QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+Start time: 15:34:31 on Oct 12,2026
+vcover report -details D:\Apply Process\Resume\Projects - Copy\Additional_English_Projects\02_Coverage_Driven_Multi_Cycle_ALU_Verification\code\results\combined_42\with_plan.ucdb 
+Coverage Report by instance with details
+
+=================================================================================
+=== Instance: /top/dut
+=== Design Unit: work.alu_multi_cycle
+=================================================================================
+Branch Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Branches                        27        23         4    85.18%
+
+================================Branch Details================================
+
+Branch Coverage for instance /top/dut
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File D:/Apply Process/Resume/Projects - Copy/Additional_English_Projects/02_Coverage_Driven_Multi_Cycle_ALU_Verification/code/hdl/alu_multi_cycle.sv
+------------------------------------CASE Branch------------------------------------
+    58                                      6525     Count coming in to CASE
+    59              1                       1237     
+    60              1                       1234     
+    61              1                       1201     
+    62              1                       1358     
+    63              1                       1495     
+Branch totals: 5 hits of 5 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    78                                     10335     Count coming in to IF
+    78              1                        313     
+    93              1                      10022     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------CASE Branch------------------------------------
+    97                                     10022     Count coming in to CASE
+    99              1                       4529     
+    128             1                       3153     
+    144             1                        862     
+    159             1                       1478     
+                                         ***0***     All False Count
+Branch totals: 4 hits of 5 branches = 80.00%
+
+------------------------------------IF Branch------------------------------------
+    109                                     4529     Count coming in to IF
+    109             1                       2103     
+                                            2426     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    116                                     2103     Count coming in to IF
+    116             1                       1052     
+    118             1                    ***0***     
+    120             1                       1051     
+Branch totals: 2 hits of 3 branches = 66.66%
+
+------------------------------------IF Branch------------------------------------
+    130                                     3153     Count coming in to IF
+    130             1                       3153     
+                                         ***0***     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    131                                     3153     Count coming in to IF
+    131             1                    ***0***     
+                                            3153     All False Count
+Branch totals: 1 hit of 2 branches = 50.00%
+
+------------------------------------IF Branch------------------------------------
+    137                                     3153     Count coming in to IF
+    137             1                       1051     
+                                            2102     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    151                                      862     Count coming in to IF
+    151             1                         22     
+    154             1                        840     
+Branch totals: 2 hits of 2 branches = 100.00%
+
+------------------------------------IF Branch------------------------------------
+    164                                     1478     Count coming in to IF
+    164             1                        840     
+                                             638     All False Count
+Branch totals: 2 hits of 2 branches = 100.00%
+
+
+FSM Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    FSM States                       4         4         0   100.00%
+    FSM Transitions                  7         5         2    71.42%
+
+================================FSM Details================================
+
+FSM Coverage for instance /top/dut --
+
+FSM_ID: state
+    Current State Object : state
+    ----------------------
+    State Value MapInfo :
+    ---------------------
+Line          State Name               Value
+----          ----------               -----
+  99                IDLE                   0
+ 128             RECEIVE                   1
+ 144             EXECUTE                   2
+ 159                SEND                   3
+    Covered States :
+    ----------------
+                   State           Hit_count
+                   -----           ---------
+                    IDLE                2227          
+                 RECEIVE                1051          
+                 EXECUTE                1051          
+                    SEND                 840          
+    Covered Transitions :
+    ---------------------
+Line            Trans_ID           Hit_count          Transition          
+----            --------           ---------          ----------          
+ 121                   0                1051          IDLE -> RECEIVE               
+ 139                   2                1051          RECEIVE -> EXECUTE            
+ 155                   4                 840          EXECUTE -> SEND               
+ 152                   5                 211          EXECUTE -> IDLE               
+ 165                   6                 840          SEND -> IDLE                  
+    Uncovered Transitions :
+    -----------------------
+Line            Trans_ID          Transition          
+----            --------          ----------          
+ 119                   1          IDLE -> EXECUTE     
+  80                   3          RECEIVE -> IDLE     
+
+
+    Summary                       Bins      Hits    Misses  Coverage
+    -------                       ----      ----    ------  --------
+        FSM States                   4         4         0   100.00%
+        FSM Transitions              7         5         2    71.42%
+Statement Coverage:
+    Enabled Coverage              Bins      Hits    Misses  Coverage
+    ----------------              ----      ----    ------  --------
+    Statements                      50        48         2    96.00%
+
+================================Statement Details================================
+
+Statement Coverage for instance /top/dut --
+
+    Line         Item                      Count     Source 
+    ----         ----                      -----     ------ 
+  File D:/Apply Process/Resume/Projects - Copy/Additional_English_Projects/02_Coverage_Driven_Multi_Cycle_ALU_Verification/code/hdl/alu_multi_cycle.sv
+    57              1                       6525     
+    59              1                       1237     
+    60              1                       1234     
+    61              1                       1201     
+    62              1                       1358     
+    63              1                       1495     
+    67              1                       5454     
+    68              1                       5454     
+    70              1                       5454     
+    75              1                      10335     
+    80              1                        313     
+    81              1                        313     
+    83              1                        313     
+    85              1                        313     
+    86              1                        313     
+    87              1                        313     
+    88              1                        313     
+    89              1                        313     
+    90              1                        313     
+    91              1                        313     
+    95              1                      10022     
+    101             1                       4529     
+    102             1                       4529     
+    103             1                       4529     
+    104             1                       4529     
+    105             1                       4529     
+    106             1                       4529     
+    107             1                       4529     
+    110             1                       2103     
+    111             1                       2103     
+    112             1                       2103     
+    114             1                       2103     
+    117             1                       1052     
+    119             1                    ***0***     
+    121             1                       1051     
+    132             1                    ***0***     
+    133             1                       3153     
+    134             1                       3153     
+    135             1                       3153     
+    139             1                       1051     
+    146             1                        862     
+    148             1                        862     
+    149             1                        862     
+    152             1                         22     
+    153             1                         22     
+    155             1                        840     
+    161             1                       1478     
+    162             1                       1478     
+    165             1                        840     
+    166             1                        840     
+
+=================================================================================
+=== Instance: /class_pkg
+=== Design Unit: work.class_pkg
+=================================================================================
+
+Assertion Coverage:
+    Assertions                       1         1         0   100.00%
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/class_pkg/Generator/run/#ublk#145296695#34/immed__38
+                     D:/Apply Process/Resume/Projects - Copy/Additional_English_Projects/02_Coverage_Driven_Multi_Cycle_ALU_Verification/code/hvl/environment_packages/Generator.sv(38)
+                                                        0          4
+
+Covergroup Coverage:
+    Covergroups                      2        na        na   100.00%
+        Coverpoints/Crosses          7        na        na        na
+            Covergroup Bins         21        21         0   100.00%
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /class_pkg/ALU_in_coverage/ALU_in_transaction_cg 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    15         15          -                      
+    missing/total bins:                                     0         15          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint op                                     100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin noop                                          263         10          -    Covered              
+        bin addop                                         258         10          -    Covered              
+        bin andop                                         262         10          -    Covered              
+        bin xorop                                         251         10          -    Covered              
+        bin mulop                                         280         10          -    Covered              
+        bin rstop                                         302         10          -    Covered              
+        illegal_bin invalid_op                              0                     -    ZERO                 
+    Coverpoint a                                      100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                           396         10          -    Covered              
+        bin mid                                           530         10          -    Covered              
+        bin high                                          125         10          -    Covered              
+    Coverpoint b                                      100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                           411         10          -    Covered              
+        bin mid                                           515         10          -    Covered              
+        bin high                                          125         10          -    Covered              
+    Coverpoint clk_gap                                100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                           61         10          -    Covered              
+        bin Low                                           709         10          -    Covered              
+        bin high                                          544         10          -    Covered              
+ TYPE /class_pkg/ALU_out_coverage/ALU_out_transaction_cg 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     6          6          -                      
+    missing/total bins:                                     0          6          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint result                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                           780         10          -    Covered              
+        bin high                                           82         10          -    Covered              
+    Coverpoint result_rst                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                           862         10          -    Covered              
+        bin high                                          491         10          -    Covered              
+    Coverpoint reset_during_calculation               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin NO_mid_cal_reset                             1164         10          -    Covered              
+        bin mid_cal_reset                                 189         10          -    Covered              
+
+COVERGROUP COVERAGE:
+----------------------------------------------------------------------------------------------------------
+Covergroup                                             Metric       Goal       Bins    Status               
+                                                                                                         
+----------------------------------------------------------------------------------------------------------
+ TYPE /class_pkg/ALU_in_coverage/ALU_in_transaction_cg 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                    15         15          -                      
+    missing/total bins:                                     0         15          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint op                                     100.00%        100          -    Covered              
+        covered/total bins:                                 6          6          -                      
+        missing/total bins:                                 0          6          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin noop                                          263         10          -    Covered              
+        bin addop                                         258         10          -    Covered              
+        bin andop                                         262         10          -    Covered              
+        bin xorop                                         251         10          -    Covered              
+        bin mulop                                         280         10          -    Covered              
+        bin rstop                                         302         10          -    Covered              
+        illegal_bin invalid_op                              0                     -    ZERO                 
+    Coverpoint a                                      100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                           396         10          -    Covered              
+        bin mid                                           530         10          -    Covered              
+        bin high                                          125         10          -    Covered              
+    Coverpoint b                                      100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                           411         10          -    Covered              
+        bin mid                                           515         10          -    Covered              
+        bin high                                          125         10          -    Covered              
+    Coverpoint clk_gap                                100.00%        100          -    Covered              
+        covered/total bins:                                 3          3          -                      
+        missing/total bins:                                 0          3          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin zero                                           61         10          -    Covered              
+        bin Low                                           709         10          -    Covered              
+        bin high                                          544         10          -    Covered              
+ TYPE /class_pkg/ALU_out_coverage/ALU_out_transaction_cg 
+                                                      100.00%        100          -    Covered              
+    covered/total bins:                                     6          6          -                      
+    missing/total bins:                                     0          6          -                      
+    % Hit:                                            100.00%        100          -                      
+    Coverpoint result                                 100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                           780         10          -    Covered              
+        bin high                                           82         10          -    Covered              
+    Coverpoint result_rst                             100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin low                                           862         10          -    Covered              
+        bin high                                          491         10          -    Covered              
+    Coverpoint reset_during_calculation               100.00%        100          -    Covered              
+        covered/total bins:                                 2          2          -                      
+        missing/total bins:                                 0          2          -                      
+        % Hit:                                        100.00%        100          -                      
+        bin NO_mid_cal_reset                             1164         10          -    Covered              
+        bin mid_cal_reset                                 189         10          -    Covered              
+
+TOTAL COVERGROUP COVERAGE: 100.00%  COVERGROUP TYPES: 2
+
+ASSERTION RESULTS:
+--------------------------------------------------------------------
+Name                 File(Line)                   Failure      Pass 
+                                                  Count        Count
+--------------------------------------------------------------------
+/class_pkg/Generator/run/#ublk#145296695#34/immed__38
+                     D:/Apply Process/Resume/Projects - Copy/Additional_English_Projects/02_Coverage_Driven_Multi_Cycle_ALU_Verification/code/hvl/environment_packages/Generator.sv(38)
+                                                        0          4
+
+Total Coverage By Instance (filtered view): 92.10%
+
+End time: 15:34:31 on Oct 12,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0
